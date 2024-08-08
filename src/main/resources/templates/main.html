@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <link href="/css/juststart.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .main-page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh; /* 화면의 전체 높이 */
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0.5rem;
+            background-color: #f8f9fa;
+            /* border-bottom: 1px solid #ddd; */
+        }
+        .header .email {
+            margin-right: 1rem;
+        }
+        .header .logout-button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+        .header .logout-button:hover {
+            background-color: #0056b3;
+        }
+        .main-content {
+            flex: 1; /* 남은 공간을 모두 차지하게 함 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+<div class="main-page">
+    <div class="header">
+        <div class="email">user@example.com</div>
+        <!-- <button class="logout-button">로그아웃</button> -->
+        <form method="get" action="login">
+            <button type="submit" class="logout-button">로그아웃</button>
+        </form>
+    </div>
+    <div class="main-content">
+        <!-- 중앙에 비워둘 공간 -->
+    </div>
+</div>
+</body>
+</html>
